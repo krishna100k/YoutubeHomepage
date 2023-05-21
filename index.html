@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body id="body">
+    <div class="container">
+      <aside>
+        <div class="bars">
+          <img src="icons/bars.svg" alt="bars" />
+        </div>
+
+        <div class="side-icons">
+          <i>
+            <img src="icons/home.svg" alt="home" />
+          </i>
+          <p>Home</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <img src="icons/compass.svg" alt="explore" />
+          </i>
+          <p>Explore</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <img src="icons/video-gallary.svg" alt="gallary" />
+          </i>
+          <p>Subscriptions</p>
+        </div>
+        <div class="side-icons">
+          <i>
+            <img src="icons/video-library.svg" alt="library" />
+          </i>
+          <p>Library</p>
+        </div>
+      </aside>
+      <div class="main-container">
+        <header>
+          <nav>
+            <div class="logo">
+              <img src="images/youtube-logo.png" alt="Youtube Logo" />
+            </div>
+            <div class="center-nav">
+              <div class="search">
+                <input type="text" />
+                <button>
+                  <img src="icons/search.svg" alt="search" />
+                </button>
+              </div>
+              <div class="mic">
+                <img src="icons/mic.svg" alt="mic" />
+              </div>
+            </div>
+            <div class="side-nav">
+                <i>
+                    <button id="button" type="button" onclick="change()">Dark Mode</button>
+                  </i>
+                  <i>
+                    <button id="button" type="button" onclick="lightChange()">Light Mode</button>
+                  </i>
+              <i>
+                <img src="icons/video-add.svg" alt="video add" />
+              </i>
+              <i>
+                <img src="icons/dot-grid.svg" alt="grid" />
+              </i>
+              <i>
+                <img src="icons/bell.svg" alt="bell" />
+              </i>
+              <i>
+                <img class="channel-logo" src="images/ChannelAvatar.jpg" alt="avatar" />
+              </i>
+            </div>
+          </nav>
+          <div class="tags">
+            <div class="tag dark">All</div>
+            <div class="tag light">Mixes</div>
+            <div class="tag light">Crypto</div>
+            <div class="tag light">Html</div>
+            <div class="tag light">CSS</div>
+            <div class="tag light">Javascript</div>
+          </div>
+        </header>
+        <main class="main-content">
+          <div class="card-container">
+            <div class="card">
+              <img  class="video-thumbnail" src="images/thumb-1.png" alt="thumbnail" />
+              <div class="avatar-content">
+                <div class="avatar">
+                  <img src="images/avatar.png" alt="avatar" />
+                </div>
+
+                <div class="content">
+                  <h3>I left the College</h3>
+                  <p class="channel-name">Tharun Speaks</p>
+                  <div class="content-status">
+                    <p>320K views</p>
+                    <p>4 day ago</p>
+                  </div>
+                </div>
+                <div class="dots">
+                  <img src="icons/dots.svg" alt="dots" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="video-thumbnail" src="images/thumb-2.png" alt="thumbnail" />
+              <div class="avatar-content">
+                <div class="avatar">
+                  <img src="images/avatar.png" alt="avatar" />
+                </div>
+
+                <div class="content">
+                  <h3>Oda Introduces The Holy Knigts of God!</h3>
+                  <p class="channel-name">Ohara</p>
+                  <div class="content-status">
+                    <p>420K views</p>
+                    <p>4 days ago</p>
+                  </div>
+                </div>
+                <div class="dots">
+                  <img src="icons/dots.svg" alt="dots" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="video-thumbnail" src="images/thumb-3.png" alt="thumbnail" />
+              <div class="avatar-content">
+                <div class="avatar">
+                  <img src="images/avatar.png" alt="avatar" />
+                </div>
+
+                <div class="content">
+                  <h3>Clean code in React JS</h3>
+                  <p class="channel-name">Tanay Pratap</p>
+                  <div class="content-status">
+                    <p>500K views</p>
+                    <p>1 day ago</p>
+                  </div>
+                </div>
+                <div class="dots">
+                  <img src="icons/dots.svg" alt="dots" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="video-thumbnail" src="images/thumb-4.png" alt="thumbnail" />
+              <div class="avatar-content">
+                <div class="avatar">
+                  <img src="images/avatar.png" alt="avatar" />
+                </div>
+
+                <div class="content">
+                  <h3>Gummies for Hair Growth and Clear Skin</h3>
+                  <p class="channel-name">Bearded Chokra</p>
+                  <div class="content-status">
+                    <p>520K views</p>
+                    <p>1 day ago</p>
+                  </div>
+                </div>
+                <div class="dots">
+                  <img src="icons/dots.svg" alt="dots" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="video-thumbnail" src="images/thumb-5.png" alt="thumbnail" />
+              <div class="avatar-content">
+                <div class="avatar">
+                  <img src="images/avatar.png" alt="avatar" />
+                </div>
+
+                <div class="content">
+                  <h3>Don't take these courses in Canada in 2023</h3>
+                  <p class="channel-name">MR PATEL</p>
+                  <div class="content-status">
+                    <p>720K views</p>
+                    <p>1 day ago</p>
+                  </div>
+                </div>
+                <div class="dots">
+                  <img src="icons/dots.svg" alt="dots" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+                <img class="video-thumbnail" src="images/thumb-6.png" alt="thumbnail" />
+                <div class="avatar-content">
+                  <div class="avatar">
+                    <img src="images/avatar.png" alt="avatar" />
+                  </div>
+  
+                  <div class="content">
+                    <h3>Top 5 Thing to Bring to Ireland || Indian in Ireland</h3>
+                    <p class="channel-name">Danish Bhatia</p>
+                    <div class="content-status">
+                      <p>190K views</p>
+                      <p>1 day ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="icons/dots.svg" alt="dots" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="video-thumbnail" src="images/thumb-7.png" alt="thumbnail" />
+                <div class="avatar-content">
+                  <div class="avatar">
+                    <img src="images/avatar.png" alt="avatar" />
+                  </div>
+  
+                  <div class="content">
+                    <h3>Harsh reality of being a Software Engineer</h3>
+                    <p class="channel-name">Harkirat Singh</p>
+                    <div class="content-status">
+                      <p>1M views</p>
+                      <p>1 day ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="icons/dots.svg" alt="dots" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="video-thumbnail" src="images/thumb-8.png" alt="thumbnail" />
+                <div class="avatar-content">
+                  <div class="avatar">
+                    <img src="images/avatar.png" alt="avatar" />
+                  </div>
+  
+                  <div class="content">
+                    <h3>Pakistan is in big crisis</h3>
+                    <p class="channel-name">The Sham Sharma show</p>
+                    <div class="content-status">
+                      <p>1.5M views</p>
+                      <p>1 day ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="icons/dots.svg" alt="dots" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="video-thumbnail" src="images/thumb-9.png" alt="thumbnail" />
+                <div class="avatar-content">
+                  <div class="avatar">
+                    <img src="images/avatar.png" alt="avatar" />
+                  </div>
+  
+                  <div class="content">
+                    <h3>Urvashi Rautela and Sara Ali Khan's fashion is bad</h3>
+                    <p class="channel-name">Thugesh</p>
+                    <div class="content-status">
+                      <p>4M views</p>
+                      <p>1 day ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="icons/dots.svg" alt="dots" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <img class="video-thumbnail" src="images/thumb-10.png" alt="thumbnail" />
+                <div class="avatar-content">
+                  <div class="avatar">
+                    <img src="images/avatar.png" alt="avatar" />
+                  </div>
+  
+                  <div class="content">
+                    <h3>How India uses insurgent groups</h3>
+                    <p class="channel-name">Soch by Mohak Mangal</p>
+                    <div class="content-status">
+                      <p>700K views</p>
+                      <p>1 day ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="icons/dots.svg" alt="dots" />
+                  </div>
+                </div>
+              </div>      
+          </div>
+
+          <!-- Short -->
+          <img class="shorts-logo" src="images/youtube-shorts-logo-15249.png" alt="yt-shorts">
+
+          <div class="short-container">
+            <div class="main-short">
+                <div class="short-card">
+                  <img src="shorts-thumbnails/random-youtube-thumbnails-from-a-parallel-universe_17.jpg" alt="thumbnail">
+                </div>
+                <h3>Kartik Aryan is losing hair</h3>
+                <p>420k Views</p>
+            </div>
+
+            <div class="main-short">
+                <div class="short-card">
+                  <img src="shorts-thumbnails/short-5.png" alt="thumbnail">
+                </div>
+                <h3>badlands Chugs drinks prime
+                </h3>
+                <p>420k Views</p>
+            </div>
+
+            <div class="main-short">
+                <div class="short-card">
+                  <img src="shorts-thumbnails/short-2.png" alt="thumbnail">
+                </div>
+                <h3>Skin hacks you should try</h3>
+                <p>420k Views</p>
+            </div>
+
+            <div class="main-short">
+                <div class="short-card">
+                  <img src="shorts-thumbnails/short-3.png" alt="thumbnail">
+                </div>
+                <h3>Marcin Patrazalek amazing guitar skills</h3>
+                <p>420k Views</p>
+            </div>
+
+            <div class="main-short">
+                <div class="short-card">
+                  <img src="shorts-thumbnails/short-4.png" alt="thumbnail">
+                </div>
+                <h3>JVKE open verse challenge</h3>
+                <p>420k Views</p>
+            </div>
+
+            <div class="main-short">
+                <div class="short-card">
+                  <img src="shorts-thumbnails/sagging at its finest.png" alt="thumbnail">
+                </div>
+                <div class="short-details">
+                <h3 id="short-title">Sagging at its finest</h3>
+                <p id="views">420k Views</p>
+              </div>
+            </div>
+
+
+            
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
